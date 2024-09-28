@@ -1,0 +1,38 @@
+nclude: package:surf_lint_rules/analysis_options.yaml
+
+analyzer:
+  strong-mode:
+    implicit-dynamic: true
+
+linter:
+  rules:
+    sort_constructors_first: false
+    always_put_required_named_parameters_first: false
+    unawaited_futures: false
+
+dart_code_metrics:
+  rules:
+    - member-ordering-extended:
+        alphabetize: false
+        order:
+          - public-static-const-fields
+          - private-static-const-fields
+          - public-static-final-fields
+          - private-static-final-fields
+          - public-static-fields
+          - private-static-fields
+          - constructors
+          - named-constructors
+          - factory-constructors
+          - public-final-fields
+          - public-fields
+          - private-final-fields
+          - public-getters-setters
+          - private-fields
+          - private-getters-setters
+          - public-static-methods
+          - overridden-methods
+          - public-methods
+          - protected-methods
+          - private-static-methods
+          - private-methods
